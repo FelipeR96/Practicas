@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login y Facturación</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Usuario">
+        <input type="password" id="password" placeholder="Contraseña">
+        <button id="loginBtn">Acceder</button>
+    </div>
+
+    <div class="menu-container" id="menuContainer" style="display:none;">
+        <h2>Menú</h2>
+        <button id="facturaBtn">Factura</button>
+    </div>
+
+    <div class="factura-container" id="facturaContainer" style="display:none;">
+        <h2>Generar Factura</h2>
+        <input type="text" id="nombre" placeholder="Nombre">
+        <input type="text" id="apellido" placeholder="Apellido">
+        <input type="text" id="documento" placeholder="Documento">
+        <input type="text" id="telefono" placeholder="Teléfono">
+        <input type="text" id="direccion" placeholder="Dirección">
+        <input type="email" id="correo" placeholder="Correo Electrónico">
+        <button id="generarFacturaBtn">Generar Factura</button>
+        <button id="enviarCorreoBtn">Enviar Factura por Correo</button>
+        <h3>Datos Guardados</h3>
+        <ul id="dataList"></ul>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
